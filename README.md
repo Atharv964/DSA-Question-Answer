@@ -23,16 +23,3 @@ This problem checks whether a given string is a palindrome — meaning it reads 
     At each step, compare the character at position i with the character at position length - i - 1.
     If any mismatch is found, the string is not a palindrome.
 
-💡 Code Logic (in Java)
-
-public class PalindromeChecker {
-    public static boolean isPalindrome(String str) {
-        int n = str.length();
-        for (int i = 0; i < n / 2; i++) {
-            if (str.charAt(i) != str.charAt(n - i - 1)) {
-                return false;
-            }
-        }
-        return true;
-    }
-}
