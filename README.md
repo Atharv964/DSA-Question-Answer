@@ -1,25 +1,18 @@
-# DSA-Question-Answer
-Things are goona get intesting cause we are at the good part 
+# DSA Practice Repository
 
+This repository is a personal collection of **Data Structures and Algorithms (DSA)** problems that I solve during my practice journey. It will be updated regularly as I learn and implement new concepts.
 
-# 19/07/2025
+---
 
-created the git repo for dsa question and answers
+## ✅ Current Programs
 
-# 21/07/2025
+### 1. Palindrome Checker
 
-om deshmukh added to the team DSA
+**Description**:  
+Checks whether a given string is a palindrome or not. A palindrome is a word, number, or sequence that reads the same backward as forward (e.g., "madam", "121").
 
-# 24/07/2025
-
-# Q. check if the string is palindrome or not 
-
-✅ Palindrome String Check
-
-This problem checks whether a given string is a palindrome — meaning it reads the same forward and backward.
-🔍 Approach
-
-    Iterate from the start of the string to its midpoint.
-    At each step, compare the character at position i with the character at position length - i - 1.
-    If any mismatch is found, the string is not a palindrome.
-
+**Logic**:
+- Use two pointers: one starting from the beginning and the other from the end of the string.
+- Compare the characters at both pointers.
+- Move the pointers towards the center.
+- If all corresponding characters match, the string is a palindrome.
