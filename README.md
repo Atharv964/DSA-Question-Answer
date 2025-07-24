@@ -16,3 +16,22 @@ Checks whether a given string is a palindrome or not. A palindrome is a word, nu
 - Compare the characters at both pointers.
 - Move the pointers towards the center.
 - If all corresponding characters match, the string is a palindrome.
+
+### 2. Reverse of String
+
+**Description**:
+Reverses a given string. For example, "hello" becomes "olleh". This is useful for understanding string manipulation and is often used as a basic exercise in programming interviews.
+
+**Logic**:
+
+    - Accept a string as input from the user.
+    - Use the StringBuilder class to create a mutable sequence of characters.
+    - Call the .reverse() method of StringBuilder to reverse the string in-place.
+    - Convert the result back to a string and display the reversed string.
+
+**Steps**:
+
+    -Create a StringBuilder object using the input string.
+    -Call reverse() on the StringBuilder object.
+    -Use toString() to convert the reversed content back to a String.
+    -Output the reversed string.
