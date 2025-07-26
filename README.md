@@ -35,3 +35,26 @@ Reverses a given string. For example, "hello" becomes "olleh". This is useful fo
     -Call reverse() on the StringBuilder object.
     -Use toString() to convert the reversed content back to a String.
     -Output the reversed string.
+
+### 3. Reverse Words in a Sentence
+
+**Description**
+This Java program reverses the order of words in a given sentence. It uses a Stack data structure to reverse the words without changing the characters within each word.
+
+For example, input: "Java is fun" → output: "fun is Java"
+
+**Logic**
+
+    Accept a sentence from the user using Scanner.
+    Traverse the sentence character by character.
+    Build each word using a StringBuilder until a space is found.
+    Push each word onto a Stack.
+    After the traversal, pop all words from the stack and append them into a new StringBuilder with spaces.
+    Display the final reversed sentence.
+
+**Key Concepts Used**
+
+    Stack (LIFO - Last In, First Out)
+    StringBuilder for efficient string manipulation
+    String and character operations
+    Basic I/O using Scanner
