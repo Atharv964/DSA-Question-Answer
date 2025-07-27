@@ -58,3 +58,31 @@ For example, input: "Java is fun" → output: "fun is Java"
     StringBuilder for efficient string manipulation
     String and character operations
     Basic I/O using Scanner
+
+
+### 4. Check if Two Strings are Rotations
+
+**Description**
+This Java program checks whether one string is a rotation of another using a more efficient approach with StringBuilder. A string s2 is considered a rotation of string s1 if it can be obtained by rotating s1 circularly.
+
+For example:
+Input → s1 = "aab", s2 = "aba"
+Output → true (since "aba" is a rotation of "aab")
+
+**Logic**
+
+    Accept two strings from the user using Scanner.
+    Use a StringBuilder to hold the first string (s1) for efficient character manipulation.
+    Loop through the length of the string and in each iteration:
+    Check if the current string matches s2. If yes, return true.
+    Otherwise, rotate the string once to the right by:
+    Removing the last character and inserting it at the beginning.
+    If no match is found after all rotations, return false.
+
+**Key Concepts Used**
+
+    StringBuilder for efficient and mutable string manipulation
+    String immutability in Java (avoiding repeated creation of new objects)
+    Character operations for rotating the string
+    Looping and conditionals
+    Basic I/O using Scanner
