@@ -41,3 +41,25 @@ If all elements are negative, the algorithm still correctly returns the least ne
 For example:
 Input → nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 Output → 6 (The subarray [4, -1, 2, 1] has the maximum sum)
+
+### 6. Color Sort (Dutch National Flag Algorithm)
+
+**Description**
+This Java program implements the Dutch National Flag Algorithm to sort an array containing only three types of elements: 0s, 1s, and 2s. It rearranges the elements in a single pass using constant space, making it highly efficient for sorting colors or categorical data.
+
+The algorithm uses three pointers:
+
+    low → marks the boundary for 0s
+    mid → current element under consideration
+    high → marks the boundary for 2s
+
+By swapping elements as needed, the algorithm ensures that:
+
+    all 0s come before 1s
+    all 2s come after 1s
+
+**For example:**
+Input → nums = [2, 0, 2, 1, 1, 0]
+Output → [0, 0, 1, 1, 2, 2]
+
+This method is widely used in problems like sorting colors and segregating elements in linear time.
