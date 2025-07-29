@@ -62,4 +62,18 @@ By swapping elements as needed, the algorithm ensures that:
 Input → nums = [2, 0, 2, 1, 1, 0]
 Output → [0, 0, 1, 1, 2, 2]
 
-This method is widely used in problems like sorting colors and segregating elements in linear time.
+### 7. Majority Element (Moore's Voting Algorithm)
+
+**Description:**
+This Java program implements Moore’s Voting Algorithm to find the majority element in a given integer array. A majority element is defined as the element that appears more than ⌊n/2⌋ times in the array. The algorithm works in linear time and constant space by maintaining a candidate (ans) and a counter (freq).
+
+As it iterates through the array:
+    If the counter is zero, it chooses the current element as the new candidate.
+    If the current element matches the candidate, the counter is incremented; otherwise, it is decremented.
+    At the end of the iteration, the candidate is the majority element.
+
+This approach is efficient and does not require additional data structures like hash maps.
+
+**Example:**
+Input → nums = [2, 2, 1, 1, 1, 2, 2]
+Output → 2 (The element 2 appears more than n/2 times)
