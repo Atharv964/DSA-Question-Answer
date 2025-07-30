@@ -77,3 +77,61 @@ This approach is efficient and does not require additional data structures like 
 **Example:**
 Input → nums = [2, 2, 1, 1, 1, 2, 2]
 Output → 2 (The element 2 appears more than n/2 times)
+
+### 8. Merge Two Sorted Arrays (LeetCode 88)
+
+**Description:**
+This Java program merges two sorted integer arrays nums1 and nums2 into a single sorted array in non-decreasing order. The merge is performed in-place using the extra space available in nums1.
+
+The algorithm uses three pointers:
+
+    One pointer i at the end of the initial elements of nums1.
+    Another pointer j at the end of nums2.
+    A third pointer k at the very end of nums1 (which has enough space for all elements).
+
+It compares elements from the back of both arrays and places the larger element at index k. This continues until all elements are merged.
+
+This approach ensures O(m+n) time complexity and does not require additional space.
+
+**Example:**
+Input → nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+Output → [1,2,2,3,5,6]
+
+
+### 9. Single Number (LeetCode 136)
+
+**Description:**
+This Java program finds the element in an integer array that appears only once, while all other elements appear exactly twice.
+
+The algorithm uses the XOR (^) bitwise operator because of its properties:
+
+    a ^ a = 0
+    a ^ 0 = a
+
+By XORing all elements together, the duplicate numbers cancel each other out, leaving only the element that appears once.
+
+This method runs in O(n) time and uses O(1) space.
+
+**Example:**
+Input → nums = [4,1,2,1,2]
+Output → 4
+
+
+### 10. Power of x to the power n (LeetCode 50)
+
+**Description:**
+This Java program calculates x^n (x raised to the power n) using Exponentiation by Squaring, which optimizes the number of multiplications.
+
+The algorithm handles three cases:
+
+    If n = 0, return 1.
+    If n is negative, compute the power for -n and return its reciprocal.
+    Use the recursive relation:
+        If n is even → x^n = (x * x)^(n/2)
+        If n is odd → x^n = x * (x * x)^((n-1)/2)
+
+This approach ensures O(log n) time complexity.
+
+**Example:**
+Input → x = 2.00000, n = 10
+Output → 1024.00000
