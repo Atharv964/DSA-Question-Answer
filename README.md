@@ -135,3 +135,57 @@ This approach ensures O(log n) time complexity.
 **Example:**
 Input → x = 2.00000, n = 10
 Output → 1024.00000
+
+### 11. Spiral Matrix (LeetCode 54)
+
+**Description:**
+This Java program prints all elements of a 2D matrix in a spiral order (clockwise traversal). The algorithm keeps track of four boundaries: top, bottom, left, and right, and iteratively traverses the matrix layer by layer.
+
+The order of traversal:
+
+    Left to Right across the top row.
+    Top to Bottom along the right column.
+    Right to Left across the bottom row.
+    Bottom to Top along the left column.
+
+After each full loop, the boundaries are updated to move inward.
+
+**Example:**
+Input → matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output → [1,2,3,6,9,8,7,4,5]
+
+### 12. Search a 2D Matrix (LeetCode 74)
+
+**Description:**
+This Java program searches for a target element in a 2D matrix with the following properties:
+
+    Each row is sorted in ascending order.
+    The first integer of each row is greater than the last integer of the previous row.
+
+The matrix is treated as a flattened 1D sorted array for binary search. Index conversion is done as:
+
+    Row → mid / number_of_columns
+    Column → mid % number_of_columns
+
+This ensures an efficient O(log(m*n)) time complexity.
+
+**Example:**
+Input → matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
+Output → true
+
+### 13. Container With Most Water (LeetCode 11)
+
+**Description:**
+This Java program finds the maximum water that can be trapped between two lines on the x-axis, given by an array where each element represents height.
+
+It uses the two-pointer approach:
+
+    Initialize pointers at both ends of the array.
+    Calculate the area formed and update the maximum.
+    Move the pointer with the shorter line inward, hoping to find a taller line that might increase the area.
+
+Time complexity is O(n) due to single-pass iteration.
+
+**Example:**
+Input → height = [1,8,6,2,5,4,8,3,7]
+Output → 49
