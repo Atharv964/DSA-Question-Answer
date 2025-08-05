@@ -189,3 +189,36 @@ Time complexity is O(n) due to single-pass iteration.
 **Example:**
 Input → height = [1,8,6,2,5,4,8,3,7]
 Output → 49
+
+### 14. 3Sum (LeetCode 15)
+
+**Description:**
+This Java program finds all unique triplets in an array that sum up to zero. Each triplet must consist of three different indices (i, j, k) such that nums[i] + nums[j] + nums[k] == 0.
+
+It uses a combination of sorting and the two-pointer technique:
+
+    First, sort the array.
+    Fix one element (nums[i]) and use two pointers (j, k) to search for the remaining two numbers such that the sum is zero.
+    Skip duplicates to avoid repeating the same triplet.
+
+Time complexity is O(n²) due to the nested loop and two-pointer traversal.
+
+**Example:**
+Input → nums = [-1, 0, 1, 2, -1, -4]
+Output → [[-1, -1, 2], [-1, 0, 1]]
+
+### 15. 4Sum (LeetCode 18)
+
+**Description:**
+This Java program finds all unique quadruplets (four elements) in an array that sum up to a given target.
+
+It extends the 3Sum approach:
+    Sort the array.
+    Fix two elements (i and j), then use two pointers (left and right) to find pairs that, along with the fixed elements, sum to the target.
+    Skip duplicates to avoid repeating the same quadruplet.
+
+Time complexity is O(n³) due to three nested loops (two fixed, two-pointer for the rest).
+
+**Example:**
+Input → nums = [1, 0, -1, 0, -2, 2], target = 0
+Output → [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
